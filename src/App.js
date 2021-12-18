@@ -1,8 +1,11 @@
+import { Routes, Route,  } from "react-router-dom";
 import FancyBorder from "./Layouts/FancyBorder";
 import Footer from "./Templates/Footer";
 import Header from "./Templates/Header";
-
-
+import Nav from "./Templates/Nav";
+import Home from "./Pages/Home";
+import Shop from "./Pages/Shop";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -10,6 +13,11 @@ function App() {
    <FancyBorder> 
     <Header />
    </FancyBorder>
+   <Routes> 
+      <Route path="/" element={<Home />} />
+      <Route path="/Shop" element={<Shop />} />
+      <Route path="/Contact" element={<Contact />} />
+   </Routes>
    <FancyBorder> 
     <Footer />
    </FancyBorder>

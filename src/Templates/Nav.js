@@ -1,13 +1,13 @@
-import Link from "../Components/Link";
+import Anchour from "../Components/Anchour";
 import Flexbox from "../Layouts/Flexbox";
 
 const Nav = () => {
   return (
     <nav style={{ width: "250px" }}>
       <Flexbox > 
-        <Link page="home" />
-        <Link page="shop" />
-        <Link page="contact" />
+        <Anchour page="home" />
+        <Anchour page="shop" />
+        <Anchour page="contact" />
       </Flexbox>
     </nav>
   );
